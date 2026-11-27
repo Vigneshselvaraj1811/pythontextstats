@@ -96,7 +96,8 @@ python -m build
 
 Build artifacts go in `dist/` and are ignored by Git. See
 [CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and
-[CHANGELOG.md](CHANGELOG.md) for release history.
+[CHANGELOG.md](CHANGELOG.md) for release history. Maintainers can use the
+[release guide](docs/RELEASING.md) for PyPI publishing.
 
 ## License
 
