@@ -4,12 +4,18 @@ Text statistics and English readability estimates for Python, with no runtime
 dependencies. Analyze a string with individual functions, collect every metric
 in one result, or use the command line.
 
-> **Release status:** This branch contains the `2.0.0a1` preview. PyPI still
-> serves the `0.1.3` release. The preview has not been published.
+> **Preview release:** Version `2.0.0a1` is an alpha release. Install it
+> explicitly; the default install selects the latest stable release.
 
 ## Requirements and installation
 
-Python 3.9 or newer is required for v2.
+Python 3.9 or newer is required for v2. To install this preview from PyPI:
+
+```bash
+python -m pip install "pythontextstats==2.0.0a1"
+```
+
+To work from source:
 
 ```bash
 git clone https://github.com/Vigneshselvaraj1811/pythontextstats.git
@@ -17,8 +23,8 @@ cd pythontextstats
 python -m pip install -e .
 ```
 
-For the current PyPI release, use `python -m pip install pythontextstats`.
-That command installs 0.1.3 until a v2 release is published.
+`python -m pip install pythontextstats` selects the latest stable release.
+Until a stable v2 release exists, that is `0.1.3`.
 
 ## Quick start
 
@@ -54,7 +60,9 @@ print(report.as_dict())              # JSON-ready dictionary
 | Readability | `flesch_reading_ease`, `flesch_kincaid_grade` | English readability estimates |
 
 `analyze(text, wpm=200)` returns all of these metrics as a frozen
-`TextAnalysis` object. See the [API reference](docs/API.md) for return types,
+`TextAnalysis` object. See the
+[API reference](https://github.com/Vigneshselvaraj1811/pythontextstats/blob/main/docs/API.md)
+for return types,
 empty-input behavior, and validation rules.
 
 ## Command line
@@ -84,7 +92,9 @@ inherit those limits. Use them as estimates, not a measure of comprehension.
 
 The eight original function names remain available. Several edge cases changed
 in v2, including contractions, whitespace handling, and invalid `wpm` values.
-Read the [migration guide](docs/MIGRATING.md) before upgrading an application
+Read the
+[migration guide](https://github.com/Vigneshselvaraj1811/pythontextstats/blob/main/docs/MIGRATING.md)
+before upgrading an application
 that depends on exact counts.
 
 ## Development
@@ -95,9 +105,13 @@ python -m build
 ```
 
 Build artifacts go in `dist/` and are ignored by Git. See
-[CONTRIBUTING.md](CONTRIBUTING.md) for the development workflow and
-[CHANGELOG.md](CHANGELOG.md) for release history.
+[CONTRIBUTING.md](https://github.com/Vigneshselvaraj1811/pythontextstats/blob/main/CONTRIBUTING.md)
+for the development workflow and
+[CHANGELOG.md](https://github.com/Vigneshselvaraj1811/pythontextstats/blob/main/CHANGELOG.md)
+for release history. Maintainers can use the
+[release guide](https://github.com/Vigneshselvaraj1811/pythontextstats/blob/main/docs/RELEASING.md)
+for PyPI publishing.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/Vigneshselvaraj1811/pythontextstats/blob/main/LICENSE).

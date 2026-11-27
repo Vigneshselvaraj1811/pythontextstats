@@ -36,6 +36,7 @@ you have updated your expectations.
 
 ## Installation
 
-Until a v2 release is published, install the branch from GitHub or from a
-local checkout. The PyPI command `pip install pythontextstats` still installs
-0.1.3.
+Install the preview explicitly with
+`python -m pip install "pythontextstats==2.0.0a1"`. The unpinned
+`pip install pythontextstats` command selects the latest stable release,
+which is 0.1.3 until a stable v2 release is published.
