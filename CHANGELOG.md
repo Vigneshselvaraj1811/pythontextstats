@@ -3,7 +3,7 @@
 All notable changes to this project are documented here. Versions before 2.0
 are summarized from the published release history.
 
-## 2.0.0a1 — unreleased
+## 2.0.0a1
 
 ### Added
 
